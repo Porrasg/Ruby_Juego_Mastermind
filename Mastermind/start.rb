@@ -20,9 +20,10 @@ class Start
             puts "¡Hola! #{@player.read_name} iniciemos el juego como adivinador"
             puts Instructions.instructions
         else 
+            puts "¡Hola! #{@player.read_name} iniciemos el juego como creador del código"
+            puts Instructions.instructions
             puts "Crea el codigo:"
             create_code = gets.chomp
-            puts Instructions.instructions
         end
     end
 end
