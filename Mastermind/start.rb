@@ -9,7 +9,7 @@ class Start
     def creator_or_player
         puts "¡Bienvenido al juego Mastermind!"
         puts "--------------------------------"
-        puts "Ingresa tu nombre"
+        puts "Ingresa tu nombre:"
         name = gets.chomp
         @player.assign_name(name)
         puts "--------------------------------"
@@ -17,12 +17,15 @@ class Start
         answer = gets.chomp.downcase
         puts "--------------------------------"
         if answer == "a"
-            puts "¡Hola! #{@player.read_name} iniciemos el juego como adivinador"
+            puts "¡Hola! #{@player.read_name} iniciemos el juego como adivinador."
+            puts "--------------------------------"
             puts Instructions.instructions
         else 
-            puts "¡Hola! #{@player.read_name} iniciemos el juego como creador del código"
+            puts "¡Hola! #{@player.read_name} iniciemos el juego como creador."
+            puts "--------------------------------"
             puts Instructions.instructions
-            puts "Crea el codigo:"
+            puts "Crea el código"
+            puts "Ingresa 4 colores separados por espacios (por ejemplo: red blue green yellow)"
             create_code = gets.chomp
         end
     end

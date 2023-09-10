@@ -33,10 +33,10 @@ class UserGuesses
             code.map!(&:downcase) # Convierte los colores ingresados a minúsculas para evitar errores de mayúsculas/minúsculas
     
             right_guess = []
-            p "RAMDOM"
-            p ram_array
-            p "HECHO POR MI"
-            p code
+            # p "RAMDOM"
+            # p ram_array
+            # p "HECHO POR MI"
+            # p code
 
             code.each_with_index do |color, index|
                 if color == ram_array[index]

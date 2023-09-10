@@ -14,11 +14,11 @@ class ComputerGuesses
         end
     end
 
-    def computer_guess_brute_force
+    def computer_guess_random
         @all_colors.sample(4)
     end
 
-    def computer_guess_random
+    def computer_guess_brute_force
         @all_possible_combinations.pop
     end
 end

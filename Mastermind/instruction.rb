@@ -7,7 +7,7 @@ class Instructions
         puts "- Verde (🟢) significa color correcto en posición correcta."
         puts "- Naranja (🟠) significa color correcto en posición incorrecta."
         puts "- Naranja (🔴) significa color incorrecto."
-        puts "Empecemos..."
         puts "--------------------------------"
+        puts "Empecemos..."
     end
 end
